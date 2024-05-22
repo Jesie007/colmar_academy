@@ -27,73 +27,91 @@
     </header>
 
     <main>
-      <section class="banner container">
-        <div>
-          <img src="./images/banner.jpg" alt="banner image" />
-          <h2>Learn something new everyday</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-          <button>Start here</button>
+      <section class="banner-container">
+        <div class="banner-content">
+          <img src="./images/banner.jpg" alt="banner image" class="banner-img"/>
+          <div class="banner-text-container">
+            <h2>Learn something new everyday</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <button>Start here</button>
+          </div>
         </div>
       </section>
 
+    <div id="wrapper">
       <section class="information-main">
-        <div>
-          <img src="./images/information-main.jpg" alt="a man reading" />
-          <h2>It doesn't hurt to keep practising</h2>
-          <p>
-            Est, earum error amet dignissimos eius iure aspernatur quo rem
-            molestias nemo cupiditate alias dolorem in excepturi quasi at eaque
-            sapiente ad?
+        <div class="imformation">
+          <img src="./images/information-main.jpg" alt="a man reading" class="information-image"/>
+          <h2 class="information-title">It doesn't hurt to keep practising</h2>
+          <p class="information-text">
+            Est, earum error amet dignissimos eius iure aspernatur quo rem Lorem ipsum dolor sit amet<br/>molestias nemo cupiditate alias dolorem in excepturi Et nulla dolorem quisquam voluptate doloribus <br/>quasi at eaque
+            sapiente neque ipsum magnam possimus labore, sed nihil perferendis quod animi. 
           </p>
-          <p>Emanuel, Sr Strategiest at Hiring.com</p>
+          <p class="information-author">Emanuel, Sr Strategiest at Hiring.com</p>
         </div>
       </section>
+    
 
-      <aside>
-        <div>
-          <img
-            src="./images/information-orientation.jpg"
-            alt="people walking"
-          />
-          <h3>Orientation date</h3>
-          <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-        </div>
-        <div>
-          <img
-            src="./images/information-campus.jpg"
-            alt="imformation of campus"
-          />
-          <h3>Our campus</h3>
-          <p>Find which campus is close to you</p>
-          <a href="">Read more</a>
-        </div>
-        <div>
-          <img
-            src="./images/information-guest-lecture.jpg"
-            alt="guest lecture"
-          />
-          <h3>Our guest lecture</h3>
-          <p>
-            Join a kenote with Oliver Sack about music in medical treatment.
-          </p>
-          <a href="#">Read more</a>
-        </div>
-      </aside>
+        <aside>
+          <div class="info">
+            <img
+              src="./images/information-orientation.jpg"
+              alt="people walking"
+              class="info-image"
+            />
+            <div class="info-text">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="">Read more</a>
+            </div>
+          </div>
+          <div class="info">
+            <img
+              src="./images/information-campus.jpg"
+              alt="imformation of campus"
+              class="info-image"
+            />
+            <div class="info-text">
+              <h3>Our campus</h3>
+              <p>Find which campus is close to you</p>
+              <a href="">Read more</a>
+            </div>
+          </div>
+          <div class="info">
+            <img
+              src="./images/information-guest-lecture.jpg"
+              alt="guest lecture"
+              class="info-image"
+            />
+            <div class="info-text">
 
-      <section>
+              <h3>Our guest lecture</h3>
+              <p>
+                Join a kenote with Oliver Sack about music in medical treatment.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <section class="container">
         <h2>Start learning</h2>
+        <div class="grid">
+
+       
         <div>
           <img src="./images/course-software.jpg" alt="software engineering" />
-          <h3>software engineering</h3>
-          <p>Courses</p>
-          <p>Web development, mobile development, iOT, APIs</p>
+          <h3 class="grid-title">Software engineering</h3>
+          <p class="grid-course">Courses</p>
+          <p class="grid-content">Web development, mobile development, iOT, APIs</p>
         </div>
 
         <div>
           <img src="./images/course-computer-art.jpg" alt="computer art" />
-          <h3>Computer art</h3>
-          <p>Courses</p>
-          <p>
+          <h3 class="grid-title">Computer art</h3>
+          <p class="grid-course">Courses</p>
+          <p class="grid-content">
             Imaging & design, Web Design, Motion Graphics & Visual Effects,
             Computer Animation
           </p>
@@ -101,31 +119,32 @@
 
         <div>
           <img src="./images/course-design.jpg" alt="course design" />
-          <h3>Design</h3>
-          <p>Courses</p>
-          <p>User Experience Design, User Research, Visual Design</p>
+          <h3 class="grid-title">Design</h3>
+          <p class="grid-course">Courses</p>
+          <p class="grid-content">User Experience Design, User Research, Visual Design</p>
         </div>
 
         <div>
           <img src="./images/course-data.jpg" alt="data" />
-          <h3>Data</h3>
-          <p>Courses</p>
-          <p>Data Science, Big Data, SQL, Data Visualation</p>
+          <h3 class="grid-title">Data</h3>
+          <p class="grid-course">Courses</p>
+          <p class="grid-content">Data Science, Big Data, SQL, Data Visualation</p>
         </div>
 
         <div>
           <img src="./images/course-business.jpg" alt="course-business" />
-          <h3>Business</h3>
-          <p>Courses</p>
-          <p>Product Development, Business Development, Startup</p>
+          <h3 class="grid-title">Business</h3>
+          <p class="grid-course">Courses</p>
+          <p class="grid-content">Product Development, Business Development, Startup</p>
         </div>
 
         <div>
           <img src="./images/course-marketing.jpg" alt="course-marketing" />
-          <h3>Marketing</h3>
-          <p>Courses</p>
-          <p>Analytics, Content Marketing, Mobile Marketing</p>
+          <h3 class="grid-title">Marketing</h3>
+          <p class="grid-course">Courses</p>
+          <p class="grid-content">Analytics, Content Marketing, Mobile Marketing</p>
         </div>
+      </div>
       </section>
       
       <section>
@@ -150,13 +169,13 @@
       </section>
 
      
+      <footer>
+        <span>&copy; 2016 Colmar Academy. All rights reserved</span>
+        <ul>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </li>
+      </ul>
+    </footer>
   </body>
-  <footer>
-    <span>&copy; 2016 Colmar Academy. All rights reserved</span>
-    <ul>
-      <li>Terms</li>
-      <li>Privacy</li>
-      </li>
-    </ul>
-  </footer>
 </html>
