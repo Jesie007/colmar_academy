@@ -16,10 +16,16 @@ body {
 }
 
 /* Header section */
+.header {
+  height: 4rem;
+}
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  top: 0;
+  z-index: 10;
 }
 
 .sticky {
@@ -37,14 +43,14 @@ body {
   width: 6rem;
 }
 
-h1 {
+.heading-primary {
   font-size: 3.2rem;
   color: #343a40;
   letter-spacing: 1px;
   font-weight: 600;
 }
 
-h1 span {
+.heading-primary span {
   color: #adb5bd;
   font-weight: 200;
 }
@@ -74,8 +80,36 @@ h1 span {
   color: #343a40;
   font-weight: 700;
 }
-
+@media only screen and (max-width: 58.125em) {
+  .header {
+    height: 6rem;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    align-items: center;
+  }
+  .logo-icon {
+    height: 3rem;
+  }
+  .heading-primary {
+    font-size: 2rem;
+  }
+  .nav-list {
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: auto;
+  }
+  .nav-item {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 700;
+    margin-right: 0;
+  }
+}
 /* Section 1 */
+
 .section--1 {
   background-image: url("./images/banner.jpg");
   background-position: center;
@@ -121,6 +155,39 @@ button {
 button:hover {
   background-color: #868e96;
   cursor: pointer;
+}
+@media only screen and (max-width: 58.125em) {
+  .section--1 {
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .banner-text-container {
+    gap: 1rem;
+    top: 15%;
+    left: 5%;
+    transform: translate(-10%, -10%);
+  }
+  .banner-text-container h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .banner-text-container p {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 200;
+  }
+
+  button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    width: 100%;
+  }
 }
 
 /* Section 2  */
@@ -195,6 +262,12 @@ button:hover {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 58.125em) {
+  .section--2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* Start lerning section 3 */
 .container {
   background-color: #e9ecef;
@@ -242,15 +315,16 @@ img {
   font-size: 1.8rem;
 }
 
+@media only screen and (max-width: 58.125em) {
+  .container {
+    padding: 1.6rem 3.2rem;
+  }
+}
 /* Section 5 */
 .section--5 {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-}
-
-video {
-  width: 100%;
 }
 
 .exhibit-section h2 {
@@ -261,6 +335,15 @@ video {
   color: #495057;
 }
 
+video {
+  width: 100%;
+}
+@media only screen and (max-width: 78.5em) {
+  video {
+    display: block;
+    width: 120%;
+  }
+}
 .left {
   flex: 0 0 75%;
   display: flex;
@@ -282,11 +365,24 @@ video {
   line-height: 1.5;
 }
 .right {
-  margin-left: auto;
 }
+@media only screen and (max-width: 78.5em) {
+  .right {
+    display: flex;
+    gap: 3rem;
+    justify-items: center;
 
+    margin-left: 5rem;
+    align-items: center;
+  }
+}
 .right img {
   width: 80%;
+}
+@media only screen and (max-width: 78.5em) {
+  .right img {
+    width: 100%;
+  }
 }
 
 .right h3 {
@@ -324,4 +420,19 @@ footer {
 }
 footer ul li {
   list-style: none;
+}
+
+@media only screen and (max-width: 58.125em) {
+  footer {
+    padding-left: 1.4rem;
+    display: flex;
+    font-size: 1.6rem;
+  }
+
+  .footer-list {
+    display: flex;
+    gap: 1rem;
+
+    margin-right: 1rem;
+  }
 }
