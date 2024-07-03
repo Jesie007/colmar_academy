@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav sticky">
+      <nav class="nav">
         <div class="logo-container">
           <img
             src="./images/ic-logo.svg"
@@ -25,7 +25,34 @@
             <li class="nav-item">
               <a href="#" class="nav-link">or Companies</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="openLoginPopup">Sign in</a>
+            </li>
+            <div id="loginPopup" class="popup">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2 class="login-text">Login</h2>
+                <form id="loginForm">
+                  <label for="username" class="login-label">Username:</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="login-input"
+                    required
+                  />
+                  <label for="password" class="login-label">Password:</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="login-input"
+                    required
+                  />
+                  <button type="submit" class="btn-login">Login</button>
+                </form>
+              </div>
+            </div>
           </ul>
         </div>
       </nav>
